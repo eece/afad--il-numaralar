@@ -1,4 +1,4 @@
-[
+const data = [
     {
         "name": "Adana",
         "phone": "0 322 227 28 54 - 322 227 28 55"
@@ -323,4 +323,17 @@
         "name": "Zonguldak",
         "phone": "0 372 253 82 33"
     }
-]
+];
+output = '';
+data.forEach((item) => {
+    item.phone = item.phone.replace(/\s/g, '');
+    itemPhonesArray = item.phone.split('-');
+    let phoneCounter = 1;
+    itemPhone = '';
+        itemPhonesArray.forEach((itemPhone) => {
+            output += `<span class="font-weight-bold">${item.name} ${(itemPhonesArray.length > 1) ? phoneCounter : ''}:</span><a href="tel:+9${itemPhone}">${itemPhone}</a><br> `;
+            phoneCounter++;
+        })
+   
+})
+console.log(output);
