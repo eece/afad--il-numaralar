@@ -36,6 +36,10 @@ const data = [
         "phone": "0 482 212 37 72"
     },
     {
+        "name": "Osmaniye",
+        "phone": " 0 328 826 20 01"
+    },
+    {
         "name": "İstanbul",
         "phone": "0212 600 06 00"
     },
@@ -250,10 +254,6 @@ const data = [
     {
         "name": "Ordu",
         "phone": "0 452 234 20 16"
-    },
-    {
-        "name": "Osmaniye",
-        "phone": " 0 328 826 20 01"
     },
     {
         "name": "Rize",
