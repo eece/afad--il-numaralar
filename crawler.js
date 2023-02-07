@@ -8,6 +8,46 @@ const data = [
         "phone": "0416 216 12 34 - 0416 216 12 31"
     },
     {
+        "name": "Diyarbakır",
+        "phone": "0 412 326 11 56"
+    },
+    {
+        "name": "Gaziantep",
+        "phone": "0 342 336 26 92"
+    },
+    {
+        "name": "Hatay",
+        "phone": "0 326 233 54 15 - 0 326 233 54 16 - 0 326 233 54 17"
+    },
+    {
+        "name": "Kahramanmaraş",
+        "phone": "0344 224 14 14 - 0344 223 75 79"
+    },
+    {
+        "name": "Kilis",
+        "phone": "0 348 813 44 78"
+    },
+    {
+        "name": "Malatya",
+        "phone": "0 422 212 84 32"
+    },
+    {
+        "name": "Mardin",
+        "phone": "0 482 212 37 72"
+    },
+    {
+        "name": "İstanbul",
+        "phone": "0212 600 06 00"
+    },
+    {
+        "name": "Ankara",
+        "phone": "0 312 250 10 01 - 0 312 252 59 70 -  0 312 252 59 71"
+    },
+    {
+        "name": "İzmir",
+        "phone": "0 232 478 55 15"
+    },
+    {
         "name": "Afyonkarahisar",
         "phone": "0 272 252 53 87"
     },
@@ -22,10 +62,6 @@ const data = [
     {
         "name": "Amasya",
         "phone": "0 358 218 40 09"
-    },
-    {
-        "name": "Ankara",
-        "phone": "0 312 250 10 01 - 252 59 70-71"
     },
     {
         "name": "Antalya",
@@ -100,10 +136,6 @@ const data = [
         "phone": "0 258 262 44 10"
     },
     {
-        "name": "Diyarbakır",
-        "phone": "0 412 326 11 56"
-    },
-    {
         "name": "Düzce",
         "phone": "0 380 411 66 66 - 0 380 524 13 84"
     },
@@ -128,10 +160,6 @@ const data = [
         "phone": "0 222 324 12 19"
     },
     {
-        "name": "Gaziantep",
-        "phone": "0 342 336 26 92"
-    },
-    {
         "name": "Giresun",
         "phone": "0 454 215 76 18 - 0 454 215 76 19"
     },
@@ -144,28 +172,12 @@ const data = [
         "phone": "0 438 211 64 56"
     },
     {
-        "name": "Hatay",
-        "phone": "0 326 233 54 15 - 0 326 233 54 16 - 0 326 233 54 17"
-    },
-    {
         "name": "Iğdır",
         "phone": "0 476 227 70 21"
     },
     {
         "name": "Isparta",
         "phone": "0 246 224 20 42 - 0 246 224 20 43"
-    },
-    {
-        "name": "İstanbul",
-        "phone": "0212 600 06 00"
-    },
-    {
-        "name": "İzmir",
-        "phone": "0 232 478 55 15"
-    },
-    {
-        "name": "Kahramanmaraş",
-        "phone": "0344 224 14 14 - 0344 223 75 79"
     },
     {
         "name": "Karabük",
@@ -200,10 +212,6 @@ const data = [
         "phone": "0 386 213 27 15"
     },
     {
-        "name": "Kilis",
-        "phone": "0 348 813 44 78"
-    },
-    {
         "name": "Kocaeli",
         "phone": "0 262 325 81 39"
     },
@@ -216,16 +224,8 @@ const data = [
         "phone": "0 274 223 63 50"
     },
     {
-        "name": "Malatya",
-        "phone": "0 422 212 84 32"
-    },
-    {
         "name": "Manisa",
         "phone": "0 236 231 12 20 - 0 236 232 00 60"
-    },
-    {
-        "name": "Mardin",
-        "phone": "0 482 212 37 72"
     },
     {
         "name": "Mersin",
@@ -331,7 +331,8 @@ data.forEach((item) => {
     let phoneCounter = 1;
     itemPhone = '';
         itemPhonesArray.forEach((itemPhone) => {
-            output += `<span class="font-weight-bold">${item.name} ${(itemPhonesArray.length > 1) ? phoneCounter : ''}:</span><a href="tel:+9${itemPhone}">${itemPhone}</a><br> `;
+            output += `<span class="font-weight-bold">${item.name} ${(itemPhonesArray.length > 1) ? phoneCounter : ''}:</span><a href="tel:+9${itemPhone}">${itemPhone}</a><br>
+            `;
             phoneCounter++;
         })
    
